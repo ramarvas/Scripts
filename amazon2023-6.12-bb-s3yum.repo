@@ -1,0 +1,26 @@
+[bb-s3-amazonlinux]
+name=Amazon Linux 2023 repository
+baseurl=https://bb-os-repo.s3.eu-west-1.amazonaws.com/Amazon/2023.8.20250804/amazonlinux/
+priority=10
+enabled=1
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2023
+
+[bb-s3-kernel-livepatch-source]
+name=Amazon Linux 2023 repository
+baseurl=https://bb-os-repo.s3.eu-west-1.amazonaws.com/Amazon/2023.8.20250804/kernel-livepatch/
+priority=10
+enabled=1
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2023g
+
+[bb-s3-puppet8]
+name=Puppet 8 Repository amazon 2023 - $basearch
+baseurl=https://bb-os-repo.s3.eu-west-1.amazonaws.com/Amazon/2023.8.20250804/puppet8/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppet8-release
+enabled=1
+gpgcheck=1
